@@ -1,6 +1,12 @@
-language: java
-script:
-       - Junit
-notifications:
-        email: false
 
+language: java
+sudo: false
+jdk:
+	- oraclejdk8
+	- openjdk7
+before_install:
+	- cd java
+script:
+	- ant test
+notifications:
+	- email: false
