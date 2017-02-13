@@ -1,1 +1,6 @@
-language: java 
+language: java
+script:
+       - Junit
+notifications:
+        email: false
+
