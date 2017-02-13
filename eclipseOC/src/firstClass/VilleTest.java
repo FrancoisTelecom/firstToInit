@@ -6,12 +6,13 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 
-public class VilleTest {
+public class VilleTest extends Main {
 
 	@Test
 	public void test() {
-		assertEquals("ville!",Ville.firstClass.Ville.getNbHabitants() );
-		fail("Not yet implemented");
+		Ville ville1 = new Ville("Paris", 1234567, "France");
+		assertEquals(1234567 , ville1.getNbHabitants());
+		//fail("Not yet implemented");
 	}
 
 }
