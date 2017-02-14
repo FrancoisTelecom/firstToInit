@@ -3,7 +3,9 @@ jdk: oraclejdk8
 install: true
 script:
   - jdk_switcher use oraclejdk8
-  - mvn test -B
+  - mvn clean verify
+  - mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+  - mvn package
 cache:
   directories:
   - $HOME/.m2
