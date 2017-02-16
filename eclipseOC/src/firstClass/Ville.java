@@ -1,9 +1,9 @@
 package firstClass;
 
 public class Ville {
-	private String nomVille;
-	private String nomPays;
-	private int nbHabitants;
+private String nomVille;
+private String nomPays;
+private int nbHabitants;
 
 
 	public Ville(){
